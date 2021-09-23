@@ -1,0 +1,238 @@
+
+
+/* --- General styles using mobile first design --- */
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  color: black;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+}
+
+main {
+  padding: 20px 0;
+}
+
+header {
+  background-color: #403933;
+  font-family: 'Courier New', Courier, monospace;
+  height: 150px;
+  margin-bottom: 40px;
+}
+
+.custom-text {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: #c5c0b8;
+  font-weight: 500;
+  text-transform: uppercase;  
+  letter-spacing: 6px;
+}
+
+/* --- Navigation --- */
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 8px;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0 8px;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+
+/* --- Image styles --- */
+main img {
+  width: 100%;
+}
+
+img.image-enhanced {
+  border: 3px solid darkgray;
+}
+
+img.image-radius {
+  border-radius: 8px;
+}
+
+.projects img {
+  box-shadow: 2.8px 5.6px 5.6px hsl(0deg 0% 0% / 0.41);
+  height: 320px;
+  border-radius: 4px;
+}
+
+.projects {
+  font-size: small;
+}
+
+/* --- Main styles --- */
+section {
+  padding: 2% 10%;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0; 
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+section.alt-bkground {
+  background-color: darkgray;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  margin: 20px 0;
+}
+
+.item {
+  padding-right: 30px;
+}
+
+.projects .item-double {
+  padding-top: 30px;
+}
+
+main a {
+  font-weight: 200;
+  font-size: smaller;
+  text-align: center;
+  text-decoration: none;
+}
+
+iframe {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #403933;
+}
+
+
+/* ---  When a web browser is larger than 700 pixels --- */
+
+@media all and (min-width: 700px) {
+  
+  /* --- Header --- */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .custom-text {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 38px;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    color: blueviolet;
+  }
+
+  /* --- Main groups --- */
+
+  h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #403933;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #403933;
+    margin: 0;
+  }
+
+  p {
+    line-height: 1.5em;
+  }
+
+  
+  /* --- Link styles --- */
+  main  a:link { color: darkslateblue; }
+  main  a:visited { color: darkblue; }
+  main  a:hover { color: #403933; }
+  a:active { color: #403933; }
+  a:hover { text-decoration: underline;	}
+
+  
+ /* --- styles for the sections --- */
+  .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .item {
+    flex: 1;
+  }
+
+  .item-double {
+    flex: 2;
+    margin: 10px;
+  }
+}
+
+/* ---  Contact Form Design --- */
+form {
+  padding-top: 25px;
+  padding-right: 20px;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: darkslategrey;
+  font-family: arial;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 4.75rem;
+}
+
+button {
+  font-size: 14px;
+  padding: 10px 16px;
+}
+
+

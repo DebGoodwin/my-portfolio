@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Deb Goodwin | Software Engineer| Portfolio</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+    <!-- Container class for main page -->
+    <div class="container">        
+        <!-- Header elements -->
+        <header>
+            <h1 class="custom-text"><a id="home">Deb Goodwin</a></h1>
+            <!-- Navigation -->
+            <nav>
+                <ul id="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <!-- Introduction -->
+            <section>
+                <div class = "group">
+                    <div class = "item">
+                        <img src="images/DebPhoto2.jpg" alt="Deb Goodwin photo" class="image-radius">
+                    </div>
+                    <div class = "item-double">
+                        <h2>Hi, I'm Deb Goodwin</h2>
+                        <p>I’m in Queen Creek, Arizona, currently studying software engineering at Thinkful. I have always been 
+                            interested in software and technology, and am currently learning web design, 
+                            frontend foundations, CSS Frameworks and JavaScript. 
+                        </p>
+                        <p>My goal is to begin a career in website development. I am excited to be able to 
+                            use the tools that I have learned, to become a valuable member of a software development team.</p>
+                    </div>  
+                </div>  
+            </section>
+
+            <!-- About me -->
+            <section class="alt-bkground">
+                <h2><a id="about">About Me</a></h2>
+                <div class="group">
+                    <div class="item item-double">
+                        <p>I received my Bachelor's degree in Computer Science from Arizona State University, and
+                        worked as a software engineer for several years, before taking time off to raise three awesome children.
+                        I am interested in rejoining the software industry to pursue my passion for technology. </p>
+                        <p>When not designing websites, I can be found spending time in the great outdoors. I enjoy hiking, gardening,
+                        paddleboarding, and spending time with friends and family.</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="images/paddleboard.jpg" alt="paddleboarding" class= "image-radius">     
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio -->
+            <section class="projects">
+                <h2><a id="portfolio">Recent Projects</a></h2>
+                <div class="group">
+                    <div class="item-double">
+                        <img src="images/dashboard.PNG" alt="Restaurant Reservations">
+                        <h3>Periodic Tables</h3>
+                        <p>This application is a reservation system created for the fine dining restaurant, Periodic Tables. 
+                            The software is used by restaurant personnel when a customer calls to request a reservation. 
+                            The application allows the user to list reservations by date, search for reservations by mobile number, 
+                            create new and update existing reservations. The application also allows the user the ability to create 
+                            and manage restaurant tables. </p>
+                        <p>This is a full stack app built using React, JavaScript, HTML, Bootstrap, Node, Express, and Knex. </p>             
+                        <a href="https://front-end-ten-umber.vercel.app/dashboard">Live Demo</a>
+                        <p><a href="http://www.github.com/DebGoodwin/project-restaurant-reservations">Github repository</a></p>
+                    </div>
+                    <div class="item-double">
+                        <img src="images/PacificTrails.PNG" alt="Pacific Trails Resort">
+                        <h3>Pacific Trails Resort</h3>
+                        <p>This website was built for the Pacific Trails Resort. It gives a description of this unique resort,
+                            along with the available reservation packages. There are links to frequently asked questions, resort activities
+                            and an image gallery. The user also has the ability to create an online reservation.
+                        </p>
+                        <p>This is a website built with HTML5 and styled with CSS.</p>
+                        <a href="https://debgoodwin.github.io/pacific-trails-resort/index.html">Live Demo</a>
+                        <p><a href="http://www.github.com/DebGoodwin/pacific-trails-resort">Github repository</a></p>    
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="item-double">
+                        <img src="images/Deck.PNG" alt="Flashcard-o-matic">
+                        <h3>Flashcard-o-matic</h3>
+                        <p>This flashcard application was built to help students study online. It was designed to allow the user to create, 
+                            edit, and study decks of flashcards.</p>
+                        <p>This app was built with React, JavaScript, RESTful API, HTML, and Bootstrap.</p>
+                        <p><a href="http://www.github.com/DebGoodwin/project-flashcards">Github repository</a></p>
+                    </div>
+                    <div class="item-double">
+                        <img src="images/DecoderRing2.PNG" alt="Decoder Ring">
+                        <h3>Decoder Ring</h3>
+                        <p>This application was built as a fun way to encode and decode messages.
+                            It was designed to use the Caesar shift, the Polybius square, and Substitution cipher methods.</p>
+                        <p>This website was built using JavaScript, CSS, Mocha, and Chai.</p>  
+                        <p><a href=" https://debgoodwin.github.io/project-decoder-ring">Live Demo</a></p>
+                        <p><a href="http://www.github.com/DebGoodwin/project-decoder-ring">Github repository</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact form -->
+            <section class="alt-bkground">
+                <h2><a id="contact">Contact Form</a></h2>
+                <div class="group">
+                    <div class="item">
+                        <form action="https://formspree.io/f/xayanqzo" method="post">
+                            <label for="user-name">Name:</label>
+                            <input id="user-name" type="text" name="name">
+    
+                            <label for="user-email">Email:</label>
+                            <input id="user-email" type="text" name="email">
+
+                            <label for="user-message">Your message:</label>
+                            <textarea id="user-message" name="message"></textarea>
+
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="item-double">
+                        <p>I would love to hear from you.</p>
+                        <p> Please contact me at:</p>
+                        <p>Email: <a href="mailto:deb.a.goodwin@gmail.com">deb.a.goodwin@gmail.com</a></p>
+                        <p><a href="http://www.github.com/DebGoodwin/">Github</a></p>
+                        <p><a href="http://www.linkedin.com/in/deb-goodwin">Linkedin</a></p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d213295.73625164488!2d-111.85344710864261!3d33.35158820222705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1618694457151!5m2!1sen!2sus"
+                        height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>  
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; Deb Goodwin</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
